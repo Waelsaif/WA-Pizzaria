@@ -6,7 +6,7 @@ function Categories({ setCategorie, selectedCategorie }) {
 	const categories = ["pizza", "pasta", "sides", "desserts"];
 
   return (
-	  <View style={{ flexDirection: "row", paddingVertical: 18, alignItems: "center", width: "90%", alignSelf: "center", backgroundColor:"#FCEDCB" }}>
+	  <View style={{ flexDirection: "row", paddingBottom: 16, alignItems: "center", width: "90%", alignSelf: "center", backgroundColor:"#e2e2e2" }}>
 		  <View style={{ marginRight: 15 }}>
 			  <Icon name='search' style={{ fontSize: 25 }} />
 		  </View>
@@ -19,7 +19,7 @@ function Categories({ setCategorie, selectedCategorie }) {
 						  style={{
 							  backgroundColor: selectedCategorie === category ? "#f28aa5" : "#FFF",
 							  
-							  borderRadius: 20,
+							  borderRadius: 10,
 							  paddingHorizontal: 14,
 							  paddingVertical: 8,
 						  }}

@@ -4,7 +4,7 @@ import FoodItem from './FoodItem'
 import data from "../Data/items.json"
 function OrderItem() {
 	return (
-		<View style={{ backgroundColor: "#FFF", width: "90%", borderRadius: 16, marginBottom: 20, alignSelf: "center", padding: 12 }}>
+		<View style={{ backgroundColor: "#FFF", width: "100%", borderRadius: 16, marginBottom: 20, alignSelf: "center", padding: 12 }}>
 			<View style={{ flexDirection: "row", gap: 10, flexWrap: "wrap", justifyContent: "space-between", alignItems: "center" }}>
 				<Text style={{ width: "50%", fontSize: 18 }}>
 					Alshoqiah (Dr. koshak street)

@@ -15,7 +15,7 @@ function Ads() {
 		return () => clearInterval(interval); 
 	}, []);
   return (
-	  <View style={{ width: "90%", height: 160, alignSelf: "center", backgroundColor: "white", marginTop: 20, borderRadius: 16 }}>
+	  <View style={{ width: "90%", height: 160, alignSelf: "center", backgroundColor: "white", borderRadius: 16, marginBottom:16 }}>
 		  <Image style={{ width: "100%", height: "100%", borderRadius: 16, objectFit:"cover" }} source={{ uri: pic, }}></Image>
 	  </View>
   )

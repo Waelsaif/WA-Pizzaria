@@ -9,7 +9,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 function Orders() {
 	const Order = createStackNavigator()
 	return (
-		<View style={{ backgroundColor: "#FCEDCB", flex: 1 }}>
+		<View style={{  flex: 1 }}>
 			<OrdersPages />
 			<Order.Navigator screenOptions={{
 				headerShown: false

@@ -14,7 +14,7 @@ export default function LayoutApp() {
 	return (
 		<View style={styles.container}>
 			<Delivery />
-			<ScrollView showsVerticalScrollIndicator={false} stickyHeaderIndices={[1]} style={{}}>
+			<ScrollView showsVerticalScrollIndicator={false} stickyHeaderIndices={[1]}>
 				<Ads />
 				<Categories setCategorie={setCategorie} selectedCategorie={Categorie} />
 				<View style={{ marginBottom: 90 }}>
@@ -33,6 +33,6 @@ export default function LayoutApp() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: "#FCEDCB",
+		backgroundColor: "#e2e2e2",
 	},
 })

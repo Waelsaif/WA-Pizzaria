@@ -43,11 +43,11 @@ function ShowItem({ route }) {
 							numberOfLines={4} placeholder='Add Your Custom Notes' style={{ width: "100%", marginTop: 20, height: 120, backgroundColor: "#e3e3e3", borderRadius: 18, paddingHorizontal: 20, paddingTop: 20, fontSize: 20 }} />
 					</KeyboardAvoidingView>
 					<View style={{ flexDirection: 'row', gap: 10, alignItems: "center", marginTop: 18 }}>
-						<View style={{ flexDirection: 'row', gap: 2, alignItems: "center", backgroundColor: "#f28aa5", height: 50, borderRadius: 12 }}>
+						<View style={{ flexDirection: 'row', gap: 5, alignItems: "center", backgroundColor: "#f28aa5", height: 50, borderRadius: 12 }}>
 							<TouchableOpacity onPress={() => setCount(prev => prev + 1)} style={{ backgroundColor: "#f28aa5", width: 50, height: 50, borderRadius: 8, justifyContent: "center", alignItems: "center" }}>
-								<Text style={{ fontSize: 38, color: "#FCEDCB" }}>+</Text>
+								<Text style={{ fontSize: 36, color: "#FCEDCB" }}>+</Text>
 							</TouchableOpacity>
-							<Text style={{ fontSize: 34 }}>{count}</Text>
+							<Text style={{ fontSize: 30, color: "#FCEDCB" }}>{count}</Text>
 							<TouchableOpacity onPress={() => setCount(prev => prev === 1 ? prev : prev - 1)} style={{ backgroundColor: "#f28aa5", width: 50, height: 50, borderRadius: 8, justifyContent: "center", alignItems: "center" }}>
 								<Text style={{ fontSize: 36, color: "#FCEDCB" }}>-</Text>
 							</TouchableOpacity>

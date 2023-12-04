@@ -2,8 +2,8 @@ import React from 'react'
 import { Text, View, Image } from 'react-native'
 
 function FoodItem({ data }) {
-	const num1 = Math.floor(Math.random() * (11 - 0 + 1) + 0)
-	const num2 = Math.floor(Math.random() * (11 - 0 + 1) + 0)
+	const num1 = Math.floor(Math.random() * (11 - 5 + 1) + 5)
+	const num2 = Math.floor(Math.random() * (11 - 5 + 1) + 5)
 	let items;
 	if (num1 < num2 ){
 		items = data.slice(num1, num2+1);
