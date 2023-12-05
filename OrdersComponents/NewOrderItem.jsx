@@ -1,8 +1,11 @@
 import React from 'react'
 import { Text, View, TouchableOpacity } from 'react-native'
 import FoodItem from './FoodItem'
-import data from "../Data/items.json"
+import { useOrderItems } from "../Zustand/States"
+import { useOrderTypeState } from "../Zustand/States"
 function OrderItem() {
+	const orderType = useOrderTypeState((state) => state.orderType)
+	const data = useOrderItems((state) => state.items)
 	return (
 		<View style={{ backgroundColor: "#FFF", width: "100%", borderRadius: 16, marginBottom: 20, alignSelf: "center", padding: 12 }}>
 			<View style={{ flexDirection: "row", gap: 10, flexWrap: "wrap", justifyContent: "space-between", alignItems: "center" }}>
@@ -11,21 +14,17 @@ function OrderItem() {
 				</Text>
 				<View style={{ alignItems: "center" }}>
 					<Text style={{ color: "#aaaaaa" }}>
-						Order 3293203
+						{orderType}
 					</Text>
 					<Text style={{ color: "#aaaaaa" }}>
-						2023/10/20 5:21 PM
+						35 Min
 					</Text>
 				</View>
 			</View>
 
 			<FoodItem data={data} />
 
-			<TouchableOpacity style={{ alignSelf: "center", width: "60%", marginVertical: 12, padding: 8, backgroundColor: "#f28aa5", borderRadius: 10 }}>
-				<Text style={{ alignSelf: "center", fontSize: 22 }}>
-					Reorder
-				</Text>
-			</TouchableOpacity>
+			
 		</View>
 	)
 }
